@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Rhythm (Orbiting Dot)</title>
+    <link rel="stylesheet" href="style-orbiting-dot.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="circle-wrapper">
+            <div class="circle circle-1hr"></div>
+            <div class="orbiting-dot-container">
+                <div class="orbiting-dot"></div>
+            </div>
+        </div>
+        <div class="circle-wrapper">
+            <div class="circle circle-3hr"></div>
+            <div class="orbiting-dot-container">
+                <div class="orbiting-dot"></div>
+            </div>
+        </div>
+        <div class="circle-wrapper">
+            <div class="circle circle-12hr"></div>
+            <div class="orbiting-dot-container">
+                <div class="orbiting-dot"></div>
+            </div>
+        </div>
+        <div class="circle-wrapper">
+            <div class="circle circle-24hr"></div>
+            <div class="orbiting-dot-container">
+                <div class="orbiting-dot"></div>
+            </div>
+        </div>
+        <div class="circle-wrapper">
+            <div class="circle circle-3day"></div>
+            <div class="orbiting-dot-container">
+                <div class="orbiting-dot"></div>
+            </div>
+        </div>
+        <div class="prompt-text">Spinning... Tap a circle to set/view a reminder!</div>
+    </div>
+
+    <!-- Reminder Modal -->
+    <div id="reminder-modal" class="reminder-modal">
+        <div class="modal-content">
+            <h2 id="modal-title">Set Reminder</h2>
+            <textarea id="reminder-text" placeholder="What's your reminder?" rows="4"></textarea>
+            <div class="modal-buttons">
+                <button id="set-reminder-btn">Set Reminder</button>
+                <button id="clear-reminder-btn" class="clear-btn">Clear Reminder</button>
+                <button id="cancel-reminder-btn" class="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script-orbiting-dot.js"></script>
+</body>
+</html>
